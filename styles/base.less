@@ -1,0 +1,38 @@
+@import "./colors.less";
+
+atom-text-editor {
+  font-family: 'Fira Code';
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+atom-text-editor, :host, atom-text-editor .gutter, :host .gutter {
+	background-color: @black;
+	color: @white;
+}
+
+atom-text-editor.is-focused .cursor,
+:host.is-focused .cursor {
+	border-color: @white-transparent;
+}
+
+atom-text-editor::shadow {
+  .has-selection {
+    .selection .region {
+      background-color: @magenta-transparent
+    }
+  }
+
+  .string {
+    color: #FF7800;
+    .quoted,
+    .regexp {
+        -webkit-font-feature-settings: "liga" off, "calt" off;
+    }
+  }
+
+  @import "./js.less";
+  @import "./css.less";
+  @import "./html.less";
+  @import "./markdown.less";
+}

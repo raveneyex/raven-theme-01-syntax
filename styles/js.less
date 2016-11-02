@@ -1,0 +1,43 @@
+//JS Only Styles
+.source.js.jsx {
+  & > .keyword.control.flow,
+  .keyword.control,
+  .storage,
+  .type .function,
+  .this {
+    vertical-align: baseline;
+    font-family: 'flottflott';
+    height: inherit;
+    font-size: 1.7em;
+    line-height: 1rem;
+  }
+  .storage.type.function.arrow {
+    font-family: 'Fira Code';
+    font-style: normal;
+  }
+
+  //Colorize specific items
+  .this,
+  .storage.type,
+  .keyword.control,
+  .constant {
+    color: @yellow;
+  }
+  .comment {
+    color: @gray;
+  }
+  .invalid.deprecated {
+  	font-style: italic;
+  	color: @invalid;
+  }
+  .invalid.illegal {
+  	color: @white;
+  	background-color: @invalid;
+  }
+  .entity,
+  .readwrite,
+  .dollar,
+  .console {
+    color: @red;
+  }
+}

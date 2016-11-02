@@ -1,0 +1,27 @@
+.source.gfm,
+{
+  .heading {
+    vertical-align: baseline;
+    font-family: 'flottflott';
+    height: inherit;
+    font-size: 2.2em;
+    line-height: 1rem;
+    color: @red;
+    &.marker, &.space {
+      font-size: 1em;
+    }
+  }
+  .link {
+    .entity.gfm {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    color: @yellow
+  }
+  .raw {
+    font-style: italic;
+  }
+  .entity {
+    color: @red;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "raven-warm-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Atom Theme: Dark with warm red-yellow colors.",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/raveneyex/raven-theme-01-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
