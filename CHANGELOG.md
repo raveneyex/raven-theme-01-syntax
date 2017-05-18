@@ -1,4 +1,4 @@
-##0.2.0 - Second Release
+##1.0.1 - Second Release
 * Updated selectors.
 
 ## 0.1.0 - First Release
