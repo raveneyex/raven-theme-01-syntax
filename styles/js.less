@@ -1,48 +1,47 @@
 //JS Only Styles
-.source.js,
-.source.jsx {
+.syntax--source.syntax--js,
+.syntax--source.syntax--jsx {
   & > .keyword.control.flow,
-  .keyword.control,
-  .storage,
-  .type .function,
-  .this {
+  .syntax--keyword.syntax--control,
+  .syntax--storage,
+  .syntax--type .syntax--function,
+  .syntax--this, .syntax--entity {
     vertical-align: baseline;
     font-family: 'flottflott';
     height: inherit;
     font-size: 1.7em;
     line-height: 1rem;
   }
-  .storage.type.function.arrow {
+  .syntax--storage.syntax--type.syntax--function.syntax--arrow {
     font-family: 'Fira Code';
     font-style: normal;
   }
 
   //Colorize specific items
-  .this,
-  .storage.type,
-  .keyword.control,
-  .constant {
+  .syntax--this,
+  .syntax--storage.syntax--type,
+  .syntax--keyword.syntax--control,
+  .syntax--constant {
     color: @yellow;
   }
-  .comment {
+  .syntax--comment {
     color: @gray;
   }
-  .invalid.deprecated {
+  .syntax--invalid.syntax--deprecated {
   	font-style: italic;
   	color: @invalid;
   }
-  .invalid.illegal {
+  .syntax--invalid.syntax--illegal {
   	color: @white;
   	background-color: @invalid;
   }
-  .entity,
-  .readwrite,
-  .dollar,
-  .console {
+  .syntax--entity,
+  .syntax--readwrite,
+  .syntax--dollar,
+  .syntax--console {
     color: @red;
   }
-
-  .entity.attribute-name {
+  .syntax--entity.syntax--attribute-name {
     color: @white;
   }
 }

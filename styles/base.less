@@ -6,17 +6,16 @@ atom-text-editor {
   text-rendering: optimizeLegibility;
 }
 
-atom-text-editor, :host, atom-text-editor .gutter, :host .gutter {
+atom-text-editor, atom-text-editor .gutter {
 	background-color: @black;
 	color: @white;
 }
 
-atom-text-editor.is-focused .cursor,
-:host.is-focused .cursor {
+atom-text-editor.is-focused .cursor {
 	border-color: @white-transparent;
 }
 
-atom-text-editor::shadow {
+atom-text-editor {
   .has-selection {
     .selection .region {
       background-color: @magenta-transparent
