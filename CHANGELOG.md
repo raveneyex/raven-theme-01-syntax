@@ -1,3 +1,6 @@
+###1.1.2 - Second Release (Updated)
+* Updated more selectors to avoid atoms Deprecation Cop.
+
 ##1.1.1 - Second Release
 * Updated selectors.
 
