@@ -1,142 +1,54 @@
-//JS Only Styles
-.syntax--js {
-  & > .syntax--keyword.syntax--control.syntax--flow,
-  .syntax--keyword.syntax--control,
-  .syntax--storage,
-  .syntax--type .syntax--function,
-  .syntax--this {
-    vertical-align: baseline;
-    font-family: 'flottflott';
-    height: inherit;
-    font-size: 1.7em;
-    line-height: 1rem;
-  }
-  .syntax--storage.syntax--type.syntax--function.syntax--arrow {
-    font-family: 'Fira Code';
-    font-style: normal;
-  }
-
-  //Colorize specific items
-  .syntax--this,
-  .syntax--storage.syntax--type,
-  .syntax--keyword.syntax--control,
-  .syntax--storage.syntax--modifier,
-  .syntax--constant {
-    color: @yellow;
-  }
-  .syntax--comment {
-    color: @gray;
-  }
-  .syntax--invalid.syntax--deprecated {
-  	font-style: italic;
-  	color: @invalid;
-  }
-  .syntax--invalid.syntax--illegal {
-  	color: @white;
-  	background-color: @invalid;
-  }
-  .syntax--entity,
-  .syntax--readwrite,
-  .syntax--dollar,
-  .syntax--console {
-    color: @red;
-  }
-  .syntax--entity.syntax--attribute-name {
-    color: @white;
-  }
-}
-
+.syntax--js,
 .syntax--jsx {
-  & > .syntax--keyword.syntax--control.syntax--flow,
-  .syntax--keyword.syntax--control,
-  .syntax--storage,
-  .syntax--type .syntax--function,
-  .syntax--this {
-    vertical-align: baseline;
-    font-family: 'flottflott';
-    height: inherit;
-    font-size: 1.7em;
-    line-height: 1rem;
-  }
-  .syntax--storage.syntax--type.syntax--function.syntax--arrow {
-    font-family: 'Fira Code';
-    font-style: normal;
-  }
+    &.syntax--keyword.syntax--control,
+    .syntax--type .syntax--function,
+    .syntax--this,
+    .syntax--storage.syntax--type,syntax--class {
+        vertical-align: baseline;
+        font-family: 'flottflott';
+        height: inherit;
+        font-size: 1.7em;
+        line-height: 1rem;
+    }
 
-  //Colorize specific items
-  .syntax--this,
-  .syntax--storage.syntax--type,
-  .syntax--keyword.syntax--control,
-  .syntax--storage.syntax--modifier,
-  .syntax--constant {
-    color: @yellow;
-  }
-  .syntax--comment {
-    color: @gray;
-  }
-  .syntax--invalid.syntax--deprecated {
-  	font-style: italic;
-  	color: @invalid;
-  }
-  .syntax--invalid.syntax--illegal {
-  	color: @white;
-  	background-color: @invalid;
-  }
-  .syntax--entity,
-  .syntax--readwrite,
-  .syntax--dollar,
-  .syntax--console {
-    color: @red;
-  }
-  .syntax--entity.syntax--attribute-name {
-    color: @white;
-  }
+    .syntax--storage.syntax--type.syntax--function.syntax--arrow {
+      font-family: 'Fira Code';
+      font-style: normal;
+    }
+
+    .syntax--js {
+        color: @white;
+    }
+
+    .syntax--this,
+    .syntax--storage.syntax--type,
+    .syntax--keyword.syntax--control,
+    .syntax--storage.syntax--modifier,
+    .syntax--constant {
+      color: @yellow;
+    }
+    .syntax--comment {
+      color: @gray;
+    }
+    .syntax--invalid.syntax--deprecated {
+    	font-style: italic;
+    	color: @invalid;
+    }
+    .syntax--invalid.syntax--illegal {
+    	color: @white;
+    	background-color: @invalid;
+    }
+    .syntax--entity,
+    .syntax--readwrite,
+    .syntax--dollar,
+    .syntax--console {
+      color: @red;
+    }
+    .syntax--entity.syntax--attribute-name {
+      color: @white;
+    }
+
+    .syntax--quoted {
+        color: @orange;
+    }
 }
-
-// .syntax--source.syntax--js,
-// .syntax--source.syntax--jsx {
-//   & > .syntax--keyword.syntax--control.syntax--flow,
-//   .syntax--keyword.syntax--control,
-//   .syntax--storage,
-//   .syntax--type .syntax--function,
-//   .syntax--this {
-//     vertical-align: baseline;
-//     font-family: 'flottflott';
-//     height: inherit;
-//     font-size: 1.7em;
-//     line-height: 1rem;
-//   }
-//   .syntax--storage.syntax--type.syntax--function.syntax--arrow {
-//     font-family: 'Fira Code';
-//     font-style: normal;
-//   }
-//
-//   //Colorize specific items
-//   .syntax--this,
-//   .syntax--storage.syntax--type,
-//   .syntax--keyword.syntax--control,
-//   .syntax--storage.syntax--modifier,
-//   .syntax--constant {
-//     color: @yellow;
-//   }
-//   .syntax--comment {
-//     color: @gray;
-//   }
-//   .syntax--invalid.syntax--deprecated {
-//   	font-style: italic;
-//   	color: @invalid;
-//   }
-//   .syntax--invalid.syntax--illegal {
-//   	color: @white;
-//   	background-color: @invalid;
-//   }
-//   .syntax--entity,
-//   .syntax--readwrite,
-//   .syntax--dollar,
-//   .syntax--console {
-//     color: @red;
-//   }
-//   .syntax--entity.syntax--attribute-name {
-//     color: @white;
-//   }
-// }

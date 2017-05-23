@@ -1,37 +1,66 @@
-@import "./colors.less";
+@import "syntax-variables";
 
 atom-text-editor {
-  font-family: 'Fira Code';
-  font-style: normal;
-  text-rendering: optimizeLegibility;
-}
+    font-family: 'Fira Code';
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    background-color: @syntax-background-color;
+    color: @syntax-text-color;
 
-atom-text-editor, atom-text-editor .gutter {
-	background-color: @black;
-	color: @white;
-}
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
 
-atom-text-editor.is-focused .cursor {
-	border-color: @white-transparent;
-}
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
 
-atom-text-editor {
-  .has-selection {
-    .selection .region {
-      background-color: @magenta-transparent
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+
+    .line-number {
+      &.cursor-line {
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
+      }
+
+      &.cursor-line-no-selection {
+        color: @syntax-gutter-text-color-selected;
+      }
     }
   }
 
-  .syntax--string {
-    color: #FF7800;
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @light-gray;
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+}
+
+.syntax--string {
     .syntax--quoted,
     .syntax--regexp {
         -webkit-font-feature-settings: "liga" off, "calt" off;
     }
-  }
-
-  @import "./js.less";
-  @import "./css.less";
-  @import "./html.less";
-  @import "./markdown.less";
 }
+
+@import "css";
+@import "html";
+@import "js";

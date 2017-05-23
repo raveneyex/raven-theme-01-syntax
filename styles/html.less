@@ -1,17 +1,38 @@
 .syntax--html {
-  .syntax--tag.syntax--name {
-    color: @red;
-  }
-  .syntax--attribute.syntax--angular {
-    font-style: italic;
-  }
-  .syntax--attribute-name.syntax--angular {
-    vertical-align: baseline;
-    font-family: 'flottflott';
-    font-style: normal;
-    height: inherit;
-    font-size: 1.5em;
-    line-height: 1rem;
-    color: @yellow;
-  }
+    .syntax--tag.syntax--begin,
+    .syntax--tag.syntax--end {
+        color: @white;
+    }
+
+    .syntax--tag.syntax--name {
+      color: @red;
+    }
+
+    .syntax--attribute-name {
+      vertical-align: baseline;
+      font-family: 'flottflott';
+      font-style: normal;
+      height: inherit;
+      font-size: 1.5em;
+      line-height: 1rem;
+      color: @yellow;
+    }
+
+    .syntax--quoted,
+    &.syntax--basic.syntax--text {
+        color: @orange;
+    }
+
+    .syntax--block.syntax--angular {
+        color: @white !important;
+    }
+
+    .syntax--angular.syntax--template {
+        color: @white;
+        .syntax--js {
+            color: @white;
+            font-weight: bold;
+        }
+    }
+
 }
