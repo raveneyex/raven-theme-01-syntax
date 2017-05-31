@@ -1,3 +1,12 @@
+###2.1
+* Added JSON colors.
+* Added Markdown support
+
+###2.0
+* Completely overhauled.
+* No Atom deprecation warnings.
+* Working Font Ligatures
+
 ###1.1.2 - Second Release (Updated)
 * Updated more selectors to avoid atoms Deprecation Cop.
 
